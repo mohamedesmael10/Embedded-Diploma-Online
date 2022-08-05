@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : problem1.c
+ Author      : Mohamed Esmael
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int x[2][2]; int y[2][2]; int i , j;
+	printf("Enter the elements of 1st matrix  ");
+	fflush(stdout);
+	for(i=0;i<2;i++){
+		for(j=0;j<2;j++) {
+			printf("Enter a%d%d ", i+1,j+1);
+			fflush(stdout);
+			scanf("%d", &x[i][j]);
+			fflush(stdin);
+			}}
+
+	printf("Enter the elements of 2nd matrix  ");
+	fflush(stdout);
+	for(i=0;i<2;i++){
+		for(j=0;j<2;j++) {
+			scanf("%d", &y[i][j]);}}
+	//printf("Sum: %d" , x+y);
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,49 @@
+/*
+ ============================================================================
+ Name        : problem3.c
+ Author      : Mohamed_Esmael
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int i , j,n1 ,n2;
+	printf("Enter rows and column of matrix: ");
+	fflush(stdout);
+	scanf("%d %d",&n1 ,&n2);
+	fflush(stdin);
+	int m[n1][n2]; float t[n2][n1];
+	printf("Enter elements of matrix:\r\n");
+	for(i=0;i<n1;i++){
+		for(j=0;j<n2;j++)
+		{
+			printf("Enter elements a%d%d ",i+1,j+1);
+			fflush(stdout);
+			scanf("%d",&m[i][j]);
+			fflush(stdin);
+		}}
+	printf("Entered Matrix:\r\n");
+	for(i=0;i<n1;i++){
+		for(j=0;j<n2;j++)
+		{
+			printf("%d\t",m[i][j]);
+		}
+		printf("\r\n");
+	}
+		printf("Transpose of Matrix:\r\n");
+		for(i=0;i<n1;i++){
+				for(j=0;j<n2;j++)
+				{
+					t[j][i]=m[i][j];
+					printf("%d\t",t[i][j]);
+				}}
+
+
+
+	return EXIT_SUCCESS;
+}

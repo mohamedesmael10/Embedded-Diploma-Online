@@ -1,0 +1,26 @@
+/*
+ ============================================================================
+ Name        : problem2.c
+ Author      : Mohamed_Esmael
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int i,n;   float m[] , avr[];
+	printf("Enter the numbers of data: ");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("%d. Enter number: ",i+1);
+		scanf("%f",&m[i]);
+		avr[i] = avr[i] + m[i];
+	}
+	printf("Average = %.2f " , avr[i]/n);
+	return EXIT_SUCCESS;
+}

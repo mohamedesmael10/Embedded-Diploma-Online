@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ Name        : problem1.c
+ Author      : Mohamed_Esmael
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char x; char str[100]; int y,i ; int count=0;
+	printf("Enter a string:");
+	gets(str);
+		 fflush(stdout);
+		y = strlen(str);
+		printf("Enter a character to find frequency:");
+				fflush(stdout);
+		scanf("%c", &x );
+		fflush(stdin);
+		for(i=0;i<y;i++){
+			if(str[i]==x)
+				count++;
+		}
+		printf("Frequency of %c = %d" , x,count);
+						fflush(stdout);
+	return EXIT_SUCCESS;
+}

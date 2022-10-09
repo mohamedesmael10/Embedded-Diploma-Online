@@ -45,6 +45,7 @@ int main(void) {
 	fflush(stdin);
 	printf("Prime numbers between %d and %d are: ",x,y);
 	Prime_Numbers(x ,y);
+	printf("\n 1 is not a prime number , it must be divisible by exactly two positive integers to be prime number)");
 
 	return EXIT_SUCCESS;
 }
